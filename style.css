@@ -2,6 +2,33 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* BARRA LATERAL */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(68, 68, 68); 
+}
+
+/* FIM BARRA LATERAL */
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -144,6 +171,15 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
+}
+
+.cartoon_vini{
+  width: 150px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  transform: rotate(90deg);
+  z-index: 999;
 }
 
 /* SECTIONS */
