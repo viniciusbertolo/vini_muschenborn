@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vini Müschenborn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Vini Müschenborn</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Vini Müschenborn</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vinicius Müschenborn</h1>
+      <p class="section__text__p2">UX/UI Designer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/cv_vinicius_muschenborn.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/vinicius-müschenborn', '_blank');" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://www.github.com/viniciusbertolo', '_blank');" />
+        <img src="./assets/whats.png" alt="My WhatsApp profile" class="icon"
+          onclick="window.open('https://api.whatsapp.com/send?phone=5516982559460', '_blank');" />
+
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>4+ years <br />UX/UI Design & Front-end Developer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Systems Analysis and Development Degree &<br />Production Engineering Bachelor's Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a UI/UX Designer specializing in creating intuitive digital experiences that are user-centered and meet
+            high standards of usability and efficiency.
+            I work with wireframing, prototyping, usability testing, design systems, and componentization, while also
+            integrating Artificial Intelligence (AI) into my daily workflow. My knowledge of HTML, advanced CSS,
+            JavaScript, and React.js allows me to collaborate effectively with development teams, ensuring a seamless
+            connection between design and code.
+            I have experience working both remotely and on-site, contributing to multidisciplinary teams and delivering
+            high-quality solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Auto Layout</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Prototyping</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Design Systems</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Usability Testing</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Componentization</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Pixel Perfect</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AI</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Main</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers-proj">
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project CCAB</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/o5QqfemmkcqH2TSik3soD0/CCAB?node-id=1-50141&t=bhmGmiM44BaQv2gx-1', '_blank');">
+              Figma
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/proto/o5QqfemmkcqH2TSik3soD0/CCAB?page-id=1%3A50141&node-id=101-63527&viewport=50005%2C-14891%2C0.44&t=2MdvJaZagwKpoPHE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=101%3A63527&show-proto-sidebar=1', '_blank');">
+              Prototype
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Vagalumen</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/tiMaRqQpn7egrb7mmRCPAU/Vagalumen-Portifolio?node-id=0-1&t=teTneSdbsCiIsijp-1', '_blank');">
+              Figma
+            </button>
+
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project AcademiaX</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?node-id=0-1&t=SJpjLB3qvl2DN5Cd-1', '_blank');">
+              Figma
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/proto/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?page-id=0%3A1&node-id=2-16&viewport=78%2C-123%2C0.03&t=jyrsJmlqil9oZ9Bg-1&scaling=min-zoom&content-scaling=fixed', '_blank');">
+              Prototype
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project SOMMOS</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/PR5IitHoCdGLplL2qYwI3E/SOMMOS-Portifolio?node-id=0-1&t=6eR1XSBGyawim2sI-1', '_blank');">
+              Figma
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/proto/PR5IitHoCdGLplL2qYwI3E/SOMMOS-Portifolio?page-id=0%3A1&node-id=1-21029&viewport=544%2C400%2C0.03&t=fOo9Jl0lik3W890x-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A594&show-proto-sidebar=1', '_blank');">
+              Prototype
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+  <section id="other_projects">
+    <p class="section__text__p1">Browse My Other</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers-proj">
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project MKT Help</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('hhttps://www.figma.com/design/L4dvKKf9EFKS5X2kzKQNfX/Marketing-DOMVSiT?node-id=0-1&t=VkQkcwJvQi1iy9VP-1', '_blank');">
+              Figma
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/proto/o5QqfemmkcqH2TSik3soD0/CCAB?page-id=1%3A50141&node-id=101-63527&viewport=50005%2C-14891%2C0.44&t=2MdvJaZagwKpoPHE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=101%3A63527&show-proto-sidebar=1', '_blank');">
+              Prototype
+            </button> -->
+
+          </div>
+        </div>
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Luigi</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/6odua3Pd8GJtpsgRmH4LDE/landing-page-Luigi-sorvetes?node-id=0-1&t=l4I2XqInMBeyV0X1-1', '_blank');">
+              Figma
+            </button>
+
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-7.png" alt="Project 7" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Green House</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/YuXdacjoBXQjISKDG6FHSx/Casa-verde?node-id=0-1&t=Qqqn74dTT5g2s6Ti-1', '_blank');">
+              Figma
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/proto/EzUgyzL8JfAUo8V7CgzBIW/AcademiaX-Portifolio?page-id=0%3A1&node-id=2-16&viewport=78%2C-123%2C0.03&t=jyrsJmlqil9oZ9Bg-1&scaling=min-zoom&content-scaling=fixed', '_blank');">
+              Prototype
+            </button> -->
+
+          </div>
+        </div>
+        <div class="details-container-proj color-container">
+          <div class="article-container">
+            <img src="./assets/project-8.png" alt="Project 8" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Internal MKT</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/design/Bkve6s6YZXEp1ZTOWfORx9/Suzano-MKT?node-id=1-40337&t=ChTv5m1SaKKs8ihV-1', '_blank');">
+              Figma
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.figma.com/proto/PR5IitHoCdGLplL2qYwI3E/SOMMOS-Portifolio?page-id=0%3A1&node-id=1-21029&viewport=544%2C400%2C0.03&t=fOo9Jl0lik3W890x-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A594&show-proto-sidebar=1', '_blank');">
+              Prototype
+            </button> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:vini.alex.bertolo@gmail.com">vini.alex.bertolo@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/vinicius-müschenborn" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/whats.png" alt="Whatsapp icon" class="icon contact-icon" />
+        <p><a href="https://api.whatsapp.com/send?phone=5516982559460" target="_blank">WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Vinicius Müschenborn. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
